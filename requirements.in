@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+motor
+pydantic[dotenv]
+async-exit-stack
+async-generator

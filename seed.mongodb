@@ -1,0 +1,31 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('new_mongo_2');
+
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+// db.test.drop();
+
+// Insert a few documents into the sales collection.
+db.jobs_test.insertMany([
+  { '_id': {"id": 23}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB23", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 24}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB24", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 25}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB25", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 26}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB26", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 27}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB27", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 28}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB28", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 29}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB29", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 30}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB30", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 31}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB31", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 32}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB32", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+  { '_id': {"id": 33}, 'address': 'Ha Noi', 'description': 'description', 'salary': 2000, 'title': "JOB33", 'updated_at': new Date(), 'created_at': new Date(), 'is_open': true, 'employer_id': 3 },
+]);
+
+// Run a find command to view items sold on April 4th, 2014.
+// db.test.find({ date: { $gte: new Date('2014-04-04'), $lt: new Date('2014-04-05') } });
+db.jobs_test.find({})
